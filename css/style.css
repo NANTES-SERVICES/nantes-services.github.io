@@ -23,12 +23,45 @@ body{
   width: 100vw;
 }
 
+hr{
+  width: 75vw;
+  background-color: #BEE3DB;
+  margin-bottom: 4vw;
+}
+
+a{
+  color: #BEE3DB;
+  background-color: #002c59;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  border-radius: 25px;
+}
+
+a:hover{
+  color: #002c59;
+  background-color: #BEE3DB;
+}
+
 h1{
   font-size: 5vw;
 }
 
 h3{
   font-size: 1.5vw;
+}
+
+p{
+  text-align: justify;
+  font-size: 1.2vw;
+}
+
+.para{
+  margin-right: 10vw;
+  margin-left: 10vw;
+  box-sizing: border-box;
+  text-align-last: center;
 }
 
 .titre{
@@ -47,6 +80,7 @@ header{
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10001;
 }
 
 header h1{
@@ -98,6 +132,7 @@ nav li{
   top: 2vw;
   left: 2vw;
   color:#FFFFFF;
+  z-index: 10002;
 }
 .sousmenu{
   margin: 0;
@@ -107,7 +142,7 @@ nav li{
 
 .sm1{
   padding-top: 2vw;
-  margin-top: 17vw;
+  margin-top: 20vw;
 }
 
 .menu a{
@@ -122,7 +157,7 @@ nav li{
 }
 
 #sousmenu1{
-  z-index: -1;
+  z-index: 10000;
   width: 100vw;
   position: absolute;
   left: 0;
@@ -141,8 +176,158 @@ nav li{
   text-decoration:none;
 }
 
+
 .sousmenu a:hover{
   text-decoration: underline;
+}
+
+#main{
+  padding-top: 13vw;
+  z-index: -9999999;
+}
+
+#main h1{
+  font-size: 2vw;
+}
+
+.profils{
+  margin-top: 5vw;
+}
+
+.profils #btnj .nonb{
+  border-radius: 0;
+  background: none;
+}
+
+.profils #btnv .nonb{
+  border-radius: 0;
+  background: none;
+}
+
+.profils #btna .nonb{
+  border-radius: 0;
+  background: none;
+}
+
+.profils #btne .nonb{
+  border-radius: 0;
+  background: none;
+}
+
+.profils img{
+  border-radius: 720px;
+  max-width: 7vw;
+  position: absolute;
+  border-top: solid 2px #BEE3DB;
+  border-left: solid 2px #BEE3DB;
+}
+
+.profils .titre{
+  position: absolute;
+  z-index: 1;
+}
+
+.btnprof{
+  background-color: #002c59;
+  width: 20vw;
+  height: 30vw;
+  border-radius: 20px;
+  position: absolute;
+  border: solid 2px #BEE3DB;
+}
+
+#btnj img{
+  left: -3vw;
+  top: -3vw;z-index: 1;
+}
+
+#btnv img{
+  left: -3vw;
+  top: -3vw;
+  z-index: 1;
+}
+
+#btna img{
+  left: -3vw;
+  top: -3vw;
+  z-index: 1;
+}
+
+#btne img{
+  left: -3vw;
+  top: -3vw;
+  z-index: 1;
+}
+
+#btnj .titre{
+  top: 0.2vw;
+  left: 7.5vw;
+}
+
+#btnv .titre{
+  top: 0.2vw;
+  left: 7.5vw;
+}
+
+#btna .titre{
+  top: 0.2vw;
+  left: 7.5vw;
+}
+
+#btne .titre{
+  top: 0.2vw;
+  left: 7.5vw;
+}
+
+#btnj{
+  left: 4vw;
+}
+
+#btnv{
+  left: 28vw;
+}
+
+#btna{
+  left: 52vw;
+}
+
+#btne{
+  left: 76vw;
+}
+
+.services{
+  margin-top: 40vw;
+}
+
+.services ul{
+  font-size: 1.3vw;
+  position: absolute;
+  display: inline-block;
+  margin-top: 3vw;
+}
+
+.services ul li a{
+  border-radius: 0;
+  background: none;
+}
+
+.services ul li a:hover{
+  color: var(--text-color)
+}
+
+.sl1{
+  left: 14vw;
+}
+
+.sl2{
+  right: 14vw;
+}
+
+.sl{
+  position: absolute;
+  margin-top: 14vw;
+  left: 46vw;
+  margin-bottom: 5vw;
 }
 
 @media (min-width: 960px) {
