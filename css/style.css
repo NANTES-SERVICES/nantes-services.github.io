@@ -241,45 +241,12 @@ nav li{
   border: solid 2px #BEE3DB;
 }
 
-#btnj img{
+.btnprof img{
   left: -3vw;
   top: -3vw;z-index: 1;
 }
 
-#btnv img{
-  left: -3vw;
-  top: -3vw;
-  z-index: 1;
-}
-
-#btna img{
-  left: -3vw;
-  top: -3vw;
-  z-index: 1;
-}
-
-#btne img{
-  left: -3vw;
-  top: -3vw;
-  z-index: 1;
-}
-
-#btnj .titre{
-  top: 0.2vw;
-  left: 7.5vw;
-}
-
-#btnv .titre{
-  top: 0.2vw;
-  left: 7.5vw;
-}
-
-#btna .titre{
-  top: 0.2vw;
-  left: 7.5vw;
-}
-
-#btne .titre{
+.titre{
   top: 0.2vw;
   left: 7.5vw;
 }
@@ -393,6 +360,18 @@ nav li{
   }
   .services{
     margin-top: 115vw;
+  }
+  .vp{
+    left: 10vw;
+    top: 40vw;
+  }
+  .titre{
+    top: 0.2vw;
+    left: 12vw;
+  }
+  #btnv .titre{
+    top: 0.2vw;
+    left: 11vw;
   }
 }
 
