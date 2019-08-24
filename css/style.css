@@ -427,6 +427,17 @@ nav li{
   }
 }
 
+@media (device-height: 736px){
+  #btna{
+    top: 85vw;
+  }
+
+  #btne{
+    top: 85vw;
+  }
+}
+
+
 
 @media (max-width: 960px) {
   .bigscreen{
