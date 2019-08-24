@@ -146,14 +146,8 @@ nav li{
 }
 
 .menu a{
-  padding-left: 2vw;
-  display:block;
-  width:100%;
-  height:100%;
-  color:#FFFFFF;
-  font-family:arial,sans-serif;
-  font-size:12px;
   text-decoration:none;
+  background: none;
 }
 
 #sousmenu1{
@@ -174,6 +168,8 @@ nav li{
   color:#FFFFFF;
   font-size:2.7vw;
   text-decoration:none;
+  background: none;
+  border-radius: 0;
 }
 
 .title{
@@ -192,6 +188,20 @@ nav li{
   max-width: 100vw;
 }
 
+.nonb{
+  background: none;
+  border-radius: 0;
+}
+
+.nonb :hover{
+  background: none;
+  border-radius: 0;
+}
+
+.nonb :after{
+  background: none;
+  border-radius: 0;
+}
 
 
 .profils{
