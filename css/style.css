@@ -507,6 +507,12 @@ nav li{
   }
 }
 
+@media (device-width: 414px) and (device-height: 736px){
+  .services{
+    margin-top: 485vw;
+  }
+}
+
 @media (device-width: 640px) and (device-height: 360px){
   #btnv{
     left: 15vw;
@@ -526,6 +532,7 @@ nav li{
     margin-top: 477vw;
   }
 }
+
 
 @media (orientation: landscape) and (device-height: 411px){
   #btnv{
