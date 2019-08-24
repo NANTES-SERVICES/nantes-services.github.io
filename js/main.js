@@ -61,4 +61,7 @@ function cacheMain(obj) {
   if (sousMenu.style.display == "block") {
     main.style.display = "none";
   }
+  else if (sousMenu.style.display == "none") {
+    main.style.display = "block";
+  }
 }
