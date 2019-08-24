@@ -510,16 +510,16 @@ nav li{
 @media (device-width: 414px) and (device-height: 736px){
   #btnv{
     left: 15vw;
-    top: 150vw;
+    top: 147vw;
   }
 
   #btna{
-    top: 270vw;
+    top: 267vw;
     left: 15vw;
   }
 
   #btne{
-    top: 390vw;
+    top: 387vw;
     left: 15vw;
   }
   .services{
