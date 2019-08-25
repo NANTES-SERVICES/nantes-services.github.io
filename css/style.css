@@ -261,6 +261,15 @@ nav li{
   left: 6vw;
 }
 
+
+.btnprof p{
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+  margin-top: 3.6vw;
+  font-size: 1.1vw;
+  }
+
 #btnv .titre{
   left: 5vw;
 }
@@ -342,6 +351,13 @@ nav li{
   .bigscreen{
     display: none;
   }
+  .btnprof p{
+    margin-left: 1.8vw;
+    margin-right: 1.8vw;
+    text-align: center;
+    margin-top: 12vw;
+    font-size: 4vw;
+    }
   .sl1{
     left: 3vw;
   }
@@ -401,6 +417,7 @@ nav li{
   #btnv .titre{
     left: 21vw;
   }
+
   p{
     font-size: 2vw;
   }
@@ -415,37 +432,20 @@ nav li{
   }
   #btnv{
     left: 15vw;
-    top: 160vw;
+    top: 167vw;
   }
 
   #btna{
-    top: 275vw;
+    top: 282vw;
     left: 15vw;
   }
 
   #btne{
-    top: 390vw;
+    top: 397vw;
     left: 15vw;
   }
   .services{
     margin-top: 483vw;
-  }
-}
-
-@media (device-height: 568px) and (device-width: 320px){
-  #btnv{
-    left: 15vw;
-    top: 175vw;
-  }
-
-  #btna{
-    top: 295vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 415vw;
-    left: 15vw;
   }
 }
 
@@ -472,16 +472,16 @@ nav li{
 @media (orientation: portrait) and (device-width: 411px){
   #btnv{
     left: 15vw;
-    top: 157vw;
+    top: 170vw;
   }
 
   #btna{
-    top: 277vw;
+    top: 290vw;
     left: 15vw;
   }
 
   #btne{
-    top: 397vw;
+    top: 410vw;
     left: 15vw;
   }
   .services{
@@ -492,36 +492,16 @@ nav li{
 @media (orientation: portrait) and (device-width: 320px){
   #btnv{
     left: 15vw;
-    top: 167vw;
+    top: 185vw;
   }
 
   #btna{
-    top: 287vw;
+    top: 305vw;
     left: 15vw;
   }
 
   #btne{
-    top: 407vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: portrait) and (device-width: 414px){
-  #btnv{
-    left: 15vw;
-    top: 157vw;
-  }
-
-  #btna{
-    top: 277vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 397vw;
+    top: 425vw;
     left: 15vw;
   }
   .services{
@@ -542,24 +522,38 @@ nav li{
 }
 
 @media (device-height: 640px) and (device-width: 360px){
+  #btnv{
+    left: 15vw;
+    top: 175vw;
+  }
+
+  #btna{
+    top: 295vw;
+    left: 15vw;
+  }
+
+  #btne{
+    top: 415vw;
+    left: 15vw;
+  }
   .services{
-    margin-top: 465vw;
+    margin-top: 480vw;
   }
 }
 
 @media (device-width: 414px) and (device-height: 736px){
   #btnv{
     left: 15vw;
-    top: 147vw;
+    top: 170vw;
   }
 
   #btna{
-    top: 267vw;
+    top: 290vw;
     left: 15vw;
   }
 
   #btne{
-    top: 387vw;
+    top: 410vw;
     left: 15vw;
   }
   .services{
@@ -608,6 +602,46 @@ nav li{
   }
 }
 
+@media (orientation: landscape) and (device-height: 360px){
+  #btnv{
+    left: 15vw;
+    top: 155vw;
+  }
+
+  #btna{
+    top: 275vw;
+    left: 15vw;
+  }
+
+  #btne{
+    top: 395vw;
+    left: 15vw;
+  }
+  .services{
+    margin-top: 477vw;
+  }
+}
+
+@media (orientation: landscape) and (device-height: 320px){
+  #btnv{
+    left: 15vw;
+    top: 157vw;
+  }
+
+  #btna{
+    top: 277vw;
+    left: 15vw;
+  }
+
+  #btne{
+    top: 397vw;
+    left: 15vw;
+  }
+  .services{
+    margin-top: 477vw;
+  }
+}
+
 @media (orientation: landscape) and (device-width: 980px){
   #btnv{
     left: 15vw;
@@ -631,16 +665,16 @@ nav li{
 @media (device-height: 1024px) and (device-width: 768px){
   #btnv{
     left: 15vw;
-    top: 150vw;
+    top: 155vw;
   }
 
   #btna{
-    top: 270vw;
+    top: 275vw;
     left: 15vw;
   }
 
   #btne{
-    top: 390vw;
+    top: 395vw;
     left: 15vw;
   }
   .title{
