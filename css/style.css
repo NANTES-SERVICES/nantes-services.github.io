@@ -622,6 +622,66 @@ nav li{
   }
 }
 
+@media (orientation: landscape) and (device-height: 414px){
+  #btnv{
+    left: 15vw;
+    top: 155vw;
+  }
+
+  #btna{
+    top: 275vw;
+    left: 15vw;
+  }
+
+  #btne{
+    top: 395vw;
+    left: 15vw;
+  }
+  .services{
+    margin-top: 477vw;
+  }
+}
+
+@media (orientation: landscape) and (device-height: 375px){
+  #btnv{
+    left: 15vw;
+    top: 152vw;
+  }
+
+  #btna{
+    top: 272vw;
+    left: 15vw;
+  }
+
+  #btne{
+    top: 392vw;
+    left: 15vw;
+  }
+  .services{
+    margin-top: 477vw;
+  }
+}
+
+@media (orientation: landscape) and (device-height: 375px){
+  #btnv{
+    left: 15vw;
+    top: 155vw;
+  }
+
+  #btna{
+    top: 275vw;
+    left: 15vw;
+  }
+
+  #btne{
+    top: 395vw;
+    left: 15vw;
+  }
+  .services{
+    margin-top: 477vw;
+  }
+}
+
 @media (orientation: landscape) and (device-height: 320px){
   #btnv{
     left: 15vw;
