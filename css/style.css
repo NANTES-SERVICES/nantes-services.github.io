@@ -795,16 +795,16 @@ color: #BEE3DB;
 @media (device-width: 414px) and (device-height: 736px){
   #btnv{
     left: 15vw;
-    top: 170vw;
+    top: 165vw;
   }
 
   #btna{
-    top: 290vw;
+    top: 285vw;
     left: 15vw;
   }
 
   #btne{
-    top: 410vw;
+    top: 405vw;
     left: 15vw;
   }
   .services{
