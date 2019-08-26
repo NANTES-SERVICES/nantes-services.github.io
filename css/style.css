@@ -21,6 +21,9 @@ body{
   font-family: var(--text-font);
   color: var(--text-color);
   width: 100vw;
+  left: 0;
+  top: 0;
+  margin: 0;
 }
 
 hr{
@@ -135,9 +138,11 @@ nav li{
   z-index: 10002;
 }
 .sousmenu{
+  z-index: 10000000;
   margin: 0;
   color:#FFFFFF;
   padding-top: 5vw;
+  max-width: 100vw;
 }
 
 .sm1{
@@ -167,6 +172,8 @@ nav li{
   height:100%;
   color:#FFFFFF;
   font-size:2.7vw;
+  padding-left: 0;
+  padding-right: 0;
   text-decoration:none;
   background: none;
   border-radius: 0;
@@ -186,6 +193,12 @@ nav li{
   padding-top: 20vw;
   z-index: -9999999;
   max-width: 100vw;
+  position: relative;
+}
+
+.posmain{
+  position: absolute;
+  left: 0;
 }
 
 .nonb{
@@ -530,7 +543,7 @@ color: #BEE3DB;
   header{
     padding-bottom: 9vw;
   }
-  #menu a{
+  #menu1 a{
     position: absolute;
     top: 3vw;
   }
