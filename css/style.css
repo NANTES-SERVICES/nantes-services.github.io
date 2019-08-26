@@ -360,7 +360,7 @@ nav li{
   left: 5vw;
 }
 
-.logo{
+#logo{
   max-width: 10vw;
   position: absolute;
   top: 1vw;
@@ -479,7 +479,7 @@ color: #BEE3DB;
   #bigscreen{
     display: block;
   }
-  .logotel{
+  #logotel{
     display: none;
   }
   .desc{
@@ -500,20 +500,20 @@ color: #BEE3DB;
   header > nav{
     display: none;
   }
-  .logo{
+  #logo{
     max-width: 8vw;
   }
-  .logotel{
+  #logotel{
     display: none;
   }
 }
 
 
 @media (max-device-width: 960px) {
-  .logo{
+  #logo{
     display: none;
   }
-  .logotel{
+  #logotel{
     display: block;
     max-width: 9vw;
     position: absolute;
