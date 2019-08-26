@@ -267,8 +267,23 @@ nav li{
   margin-right: 1vw;
   text-align: center;
   margin-top: 3.6vw;
-  font-size: 1.1vw;
-  }
+  font-size: 0.98vw;
+}
+
+
+.btnprof p a{
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+.btnprof a img:hover{
+  border-radius: 360px;
+}
+
+.btnprof > p > a:hover{
+  color: #BEE3DB;
+}
 
 #btnv .titre{
   left: 5vw;
@@ -337,13 +352,112 @@ nav li{
   margin-bottom: 5vw;
 }
 
+#pageprof .profilimg{
+  max-width: 15vw;
+  border-radius: 360px;
+  border: solid 2px #BEE3DB;
+  position: absolute;
+  left: 5vw;
+}
+
+#pageprof p a{
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+#pageprof a img:hover{
+border-radius: 360px;
+}
+
+#pageprof > p > a:hover{
+color: #BEE3DB;
+}
+
+#pageprof p{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 1.5vw;
+}
+
+#pageprof #ethan p{
+  padding-bottom: 3vw;
+}
+
+#pageprof .titre{
+  text-align: center;
+}
+
+#pageprof #jonah .profilimg{
+  top: 15vw;
+}
+
+#pageprof #jonah .titre{
+  position: relative;
+  top: 1vw;
+}
+
+#pageprof #jonah p{
+  position: relative;
+  text-align: center;
+}
+
+#pageprof #valentin .profilimg{
+  top: 53vw;
+}
+
+#pageprof #valentin .titre{
+  position: relative;
+  top: 3vw;
+}
+
+#pageprof #valentin p{
+  position: relative;
+  text-align: center;
+  top: 3vw;
+}
+
+#pageprof #adrien .profilimg{
+  top: 93vw;
+}
+
+#pageprof #adrien .titre{
+  position: relative;
+  top: 6vw;
+}
+
+#pageprof #adrien p{
+  position: relative;
+  text-align: center;
+  top: 5vw;
+}
+
+#pageprof #ethan .profilimg{
+  top: 135vw;
+}
+
+#pageprof #ethan .titre{
+  position: relative;
+  top: 10vw;
+}
+
+#pageprof #ethan p{
+  position: relative;
+  text-align: center;
+  top: 9vw;
+}
+
+#ethan{
+  margin-bottom: 5vw;
+}
+
 @media (min-width: 960px) {
   #menu {
-      display: none;
-    }
+    display: none;
+  }
   .bigscreen{
-      display: block;
-    }
+    display: block;
+  }
 }
 
 
@@ -351,13 +465,41 @@ nav li{
   .bigscreen{
     display: none;
   }
+  #pageprof a{
+    font-size: 1.5vw;
+  }
+  #pageprof .profilimg{
+    position: relative;
+    left: 40vw;
+    min-width: 20vw;
+    border: solid 3px #BEE3DB;
+  }
+  #pageprof #jonah .profilimg{
+    top: -1vw;
+  }
+  #pageprof #valentin .profilimg{
+    top: 1vw;
+  }
+  #pageprof #adrien .profilimg{
+    top: 4vw;
+  }
+  #pageprof #ethan .profilimg{
+    top: 8vw;
+  }
+  #pageprof #ethan p{
+    padding-bottom: 3vw;
+  }
+  #pageprof p{
+    text-align: justify;
+    text-align-last: center;
+  }
   .btnprof p{
     margin-left: 1.8vw;
     margin-right: 1.8vw;
     text-align: center;
     margin-top: 12vw;
-    font-size: 4vw;
-    }
+    font-size: 3.6vw;
+  }
   .sl1{
     left: 3vw;
   }
@@ -754,21 +896,33 @@ nav li{
   #btnv .titre{
     left: 6.5vw;
   }
+  #pageprof .profilimg{
+    max-width: 13vw;
+  }
+  #pageprof #valentin .profilimg{
+    top: 61vw;
+  }
+  #pageprof #adrien .profilimg{
+    top: 110vw;
+  }
+  #pageprof #ethan .profilimg{
+    top: 161vw;
+  }
 
-@media (max-width: 960px) {
-  .bigscreen{
-    display: none;
+  @media (max-width: 960px) {
+    .bigscreen{
+      display: none;
+    }
+    #menu{
+      display: block;
+    }
   }
-  #menu{
-    display: block;
-  }
-}
 
-@media (min-width: 1280px) {
-  header h1{
-    font-size: 4vw;
+  @media (min-width: 1280px) {
+    header h1{
+      font-size: 4vw;
+    }
+    header h3{
+      font-size: 1.2vw;
+    }
   }
-  header h3{
-    font-size: 1.2vw;
-  }
-}
