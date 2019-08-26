@@ -360,6 +360,13 @@ nav li{
   left: 5vw;
 }
 
+.logo{
+  max-width: 10vw;
+  position: absolute;
+  top: 1vw;
+  right: 2vw;
+}
+
 #pageprof p a{
   text-decoration: underline;
   margin: 0;
@@ -433,7 +440,7 @@ color: #BEE3DB;
 }
 
 #pageprof #ethan .profilimg{
-  top: 133vw; 
+  top: 133vw;
 }
 
 #pageprof #ethan .titre{
@@ -469,13 +476,54 @@ color: #BEE3DB;
   #menu {
     display: none;
   }
-  .bigscreen{
+  #bigscreen{
     display: block;
+  }
+  .logotel{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #menu {
+    display: block;
+  }
+  #bigscreen{
+    display: none;
+  }
+  header > nav{
+    display: none;
+  }
+  .logo{
+    max-width: 8vw;
+  }
+  .logotel{
+    display: none;
   }
 }
 
 
 @media (max-device-width: 960px) {
+  .logo{
+    display: none;
+  }
+  .logotel{
+    display: block;
+    max-width: 9vw;
+    position: absolute;
+    left: 44.5vw;
+    top: 8.5vw;
+  }
+  .desc{
+    display: none;
+  }
+  header{
+    padding-bottom: 9vw;
+  }
+  #menu a{
+    position: absolute;
+    top: 3vw;
+  }
   .error p{
     font-size: 3vw;
     margin-left: 5vw;
@@ -494,7 +542,7 @@ color: #BEE3DB;
     text-align: justify;
     text-align-last: center;
   }
-  .bigscreen{
+  header > nav{
     display: none;
   }
   #pageprof a{
@@ -621,6 +669,9 @@ color: #BEE3DB;
   .services{
     margin-top: 483vw;
   }
+  #bigscreen{
+    display: none;
+  }
 }
 
 @media (device-height: 731px) and (device-width: 411px){
@@ -640,6 +691,9 @@ color: #BEE3DB;
   }
   .services{
     margin-top: 477vw;
+  }
+  #bigscreen{
+    display: none;
   }
 }
 
