@@ -485,6 +485,9 @@ color: #BEE3DB;
   .desc{
     display: block;
   }
+  #logo{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -502,6 +505,7 @@ color: #BEE3DB;
   }
   #logo{
     max-width: 8vw;
+    display: block;
   }
   #logotel{
     display: none;
