@@ -451,6 +451,20 @@ color: #BEE3DB;
   margin-bottom: 5vw;
 }
 
+.error{
+  text-align: center;
+}
+
+.error1 > img{
+  max-width: 10vw;
+  border-radius: 360px;
+  border: solid 2px #BEE3DB;
+}
+
+.errorimg{
+  max-width: 68vw;
+}
+
 @media (min-width: 960px) {
   #menu {
     display: none;
@@ -462,6 +476,24 @@ color: #BEE3DB;
 
 
 @media (max-device-width: 960px) {
+  .error p{
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .error h1{
+    font-size: 3vw;
+  }
+  .errorimg{
+    max-width: 80vw;
+  }
+  .error1 > img{
+    max-width: 20vw;
+  }
+  .error p{
+    text-align: justify;
+    text-align-last: center;
+  }
   .bigscreen{
     display: none;
   }
