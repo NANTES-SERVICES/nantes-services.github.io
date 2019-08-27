@@ -723,16 +723,16 @@ color: #BEE3DB;
 @media (orientation: portrait) and (device-width: 411px){
   #btnv{
     left: 15vw;
-    top: 174vw;
+    top: 170vw;
   }
 
   #btna{
-    top: 294vw;
+    top: 290vw;
     left: 15vw;
   }
 
   #btne{
-    top: 414vw;
+    top: 410vw;
     left: 15vw;
   }
   .services{
@@ -743,16 +743,16 @@ color: #BEE3DB;
 @media (orientation: portrait) and (device-width: 320px){
   #btnv{
     left: 15vw;
-    top: 189vw;
+    top: 183vw;
   }
 
   #btna{
-    top: 309vw;
+    top: 303vw;
     left: 15vw;
   }
 
   #btne{
-    top: 429vw;
+    top: 423vw;
     left: 15vw;
   }
   .services{
@@ -763,28 +763,55 @@ color: #BEE3DB;
 @media (device-height: 667px) and (device-width: 375px) {
   .services{
     margin-top: 465vw;
-  }
+    }
+    #btnv{
+      left: 15vw;
+      top: 167vw;
+    }
+
+    #btna{
+      top: 282vw;
+      left: 15vw;
+    }
+
+    #btne{
+      top: 397vw;
+      left: 15vw;
+    }
 }
 
 @media (device-height: 812px) and (device-width: 375px) {
   .services{
     margin-top: 465vw;
   }
+  #btnv{
+    left: 15vw;
+    top: 167vw;
+  }
+
+  #btna{
+    top: 282vw;
+    left: 15vw;
+  }
+
+  #btne{
+    top: 397vw;
+    left: 15vw;
+  }
 }
 
 @media (device-height: 640px) and (device-width: 360px){
   #btnv{
     left: 15vw;
-    top: 179vw;
+    top: 173vw;
   }
 
   #btna{
-    top: 299vw;
+    top: 293vw;
     left: 15vw;
   }
-
   #btne{
-    top: 419vw;
+    top: 413vw;
     left: 15vw;
   }
   .services{
@@ -978,16 +1005,16 @@ color: #BEE3DB;
 @media (device-height: 1024px) and (device-width: 768px){
   #btnv{
     left: 15vw;
-    top: 159vw;
+    top: 155vw;
   }
 
   #btna{
-    top: 279vw;
+    top: 275vw;
     left: 15vw;
   }
 
   #btne{
-    top: 399vw;
+    top: 395vw;
     left: 15vw;
   }
   .title{
@@ -995,6 +1022,9 @@ color: #BEE3DB;
   }
   p{
     font-size: 2vw;
+  }
+  .services{
+    margin-top: 477vw;  
   }
 }
 
