@@ -1024,7 +1024,10 @@ color: #BEE3DB;
     font-size: 2vw;
   }
   .services{
-    margin-top: 477vw;  
+    margin-top: 477vw;
+  }
+  #pageprof p{
+    font-size: 2vw;
   }
 }
 
