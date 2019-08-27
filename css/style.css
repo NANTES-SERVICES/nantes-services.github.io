@@ -653,7 +653,9 @@ color: #BEE3DB;
     top: -4vw;
     font-size: 3vw;
   }
-
+  #pageprof p{
+    font-size: 2vw;
+  }
   .btnprof .titre{
     font-size: 7vw;
     left: 24vw;
@@ -1019,9 +1021,6 @@ color: #BEE3DB;
   }
   .title{
     font-size: 3.5vw;
-  }
-  p{
-    font-size: 2vw;
   }
   .services{
     margin-top: 477vw;
