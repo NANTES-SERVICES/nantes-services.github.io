@@ -9,9 +9,9 @@
 }
 
 :root{
-  --background-color: #01172e;
-  --titre-color: #BEE3DB;
-  --text-color: #FEF5EF;
+  --background-color: #0A0908;
+  --titre-color: #D3D0CB;
+  --text-color: #F4F4F6;
   --text-font: 'ModernSans-Light';
   --titre-font: "MEROCHE";
 }
@@ -28,12 +28,12 @@ body{
 
 hr{
   width: 75vw;
-  background-color: #BEE3DB;
+  background-color: #D3D0CB;
   margin-bottom: 4vw;
 }
 
 a{
-  background-color: #002c59;
+  background-color: #393E41;
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
   padding-right: 1vw;
@@ -44,8 +44,8 @@ a{
 }
 
 a:hover{
-  color: #002c59;
-  background-color: #BEE3DB;
+  color: #0A0908;
+  background-color: #D3D0CB;
 }
 
 h1{
@@ -78,7 +78,7 @@ p{
 }
 
 header{
-  background-color: #002c59;
+  background-color: #393E41;
   width: 100vw;
   margin-top: 0;
   position: absolute;
@@ -241,8 +241,8 @@ nav li{
   border-radius: 720px;
   max-width: 7vw;
   position: absolute;
-  border-top: solid 2px #BEE3DB;
-  border-left: solid 2px #BEE3DB;
+  border-top: solid 2px #D3D0CB;
+  border-left: solid 2px #D3D0CB;
 }
 
 .profils .titre{
@@ -251,12 +251,12 @@ nav li{
 }
 
 .btnprof{
-  background-color: #002c59;
+  background-color: #393E41;
   width: 20vw;
   height: 30vw;
   border-radius: 20px;
   position: absolute;
-  border: solid 2px #BEE3DB;
+  border: solid 2px #D3D0CB;
 }
 
 .btnprof img{
@@ -291,7 +291,7 @@ nav li{
 }
 
 .btnprof > p > a:hover{
-  color: #BEE3DB;
+  color: #D3D0CB;
 }
 
 #btnv .titre{
@@ -316,9 +316,9 @@ nav li{
 
 .vp{
   z-index: 1;
-  color: #BEE3DB;
-  background-color: #002c59;
-  border: solid 2px #BEE3DB;
+  color: #D3D0CB;
+  background-color: #393E41;
+  border: solid 2px #D3D0CB;
   position: absolute;
   left: 5vw;
   top: 27vw;
@@ -364,7 +364,7 @@ nav li{
 #pageprof .profilimg{
   max-width: 15vw;
   border-radius: 360px;
-  border: solid 2px #BEE3DB;
+  border: solid 2px #D3D0CB;
   position: absolute;
   left: 5vw;
 }
@@ -387,7 +387,7 @@ border-radius: 360px;
 }
 
 #pageprof > p > a:hover{
-color: #BEE3DB;
+color: #D3D0CB;
 }
 
 #pageprof p{
@@ -474,7 +474,7 @@ color: #BEE3DB;
 .error1 > img{
   max-width: 10vw;
   border-radius: 360px;
-  border: solid 2px #BEE3DB;
+  border: solid 2px #D3D0CB;
 }
 
 .errorimg{
@@ -495,6 +495,12 @@ color: #BEE3DB;
     display: block;
   }
   #logo{
+    display: block;
+  }
+  .mobprofils{
+    display: none;
+  }
+  .profils{
     display: block;
   }
 }
@@ -523,6 +529,82 @@ color: #BEE3DB;
 
 
 @media (max-device-width: 960px) {
+  .mobprofils{
+    display: block;
+  }
+  .profils{
+    display: none;
+  }
+  .mobbtnprof{
+    position: absolute;
+    width: 0vw;
+    height: 0vw;
+    display: inline-block;
+    top: 0vh;
+  }
+  .mobbtnprofj{
+    position: absolute;
+    margin-left: 0vw;
+  }
+  .mobprofils{
+    position: absolute;
+    left: 2vw;
+  }
+  .mobbtnprof img{
+    width: 23vw;
+    height: 23vw;
+    border: solid 2px #D3D0CB;
+    border-radius: 25px;
+    position: absolute;
+    left: -3.5vw;
+  }
+  .mobtitre{
+    position: absolute;
+    top: 11vh;
+    font-size: 4.5vw;
+  }
+  .mobbtnprof ul{
+    position: absolute;
+    left: -6vw;
+    top: 19vh;
+    font-size: 3vw;
+  }
+  .mobbtnprof p{
+    position: absolute;
+    font-size: 3.5vw;
+    top: 14vh;
+    text-align: center;
+  }
+  .mobbtnprof  .troispts{
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+  }
+  .mobtitrev{
+    left: -2vw;
+  }
+  .mobvp{
+    position: absolute;
+    width: 4.5vw;
+    height: 5vw;
+    border-radius: 1000px;
+    top: 70vw;
+    left: 4vw;
+    background-color: var(--titre-color);
+  }
+  .mobvp img{
+    max-width: 4vw;
+    max-height: 4vw;
+    left: 1vw;
+    top: 1vw;
+    border: none;
+  }
+
+  .mobvp img:hover{
+    max-width: 4.5vw;
+    max-height: 4.5vw;
+  }
+
   #logo{
     display: none;
   }
@@ -571,7 +653,7 @@ color: #BEE3DB;
     position: relative;
     left: 40vw;
     min-width: 20vw;
-    border: solid 3px #BEE3DB;
+    border: solid 3px #D3D0CB;
   }
   #pageprof #jonah .profilimg{
     top: -1vw;
@@ -591,13 +673,6 @@ color: #BEE3DB;
   #pageprof p{
     text-align: justify;
     text-align-last: center;
-  }
-  .btnprof p{
-    margin-left: 1.8vw;
-    margin-right: 1.8vw;
-    text-align: center;
-    margin-top: 12vw;
-    font-size: 3.6vw;
   }
   .sl1{
     left: 3vw;
@@ -635,456 +710,19 @@ color: #BEE3DB;
   header h3{
     font-size: 2.5vw;
   }
-  .btnprof{
-    background-color: #002c59;
-    width: 70vw;
-    height: 105vw;
-  }
   .title{
     font-size: 1.3vw;
   }
-  .btnprof img{
-    min-width: 15vw;
-    left: -7vw;
-    top: -4vw;
-    font-size: 3vw;
-  }
   #pageprof p{
     font-size: 2vw;
   }
-  .btnprof .titre{
-    font-size: 7vw;
-    left: 24vw;
-    top: -4vw;
+  .services{
+    margin-top: 43vh;
   }
-  #btnv .titre{
-    left: 21vw;
-  }
-
   p{
     font-size: 2vw;
   }
-  .vp{
-    font-size: 3vw;
-    top: 97vw;
-    left: 22.5vw;
-  }
-
-  #btnj{
-    left: 15vw;
-  }
-  #btnv{
-    left: 15vw;
-    top: 171vw;
-  }
-
-  #btna{
-    top: 286vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 401vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 483vw;
-  }
   #bigscreen{
     display: none;
   }
 }
-
-@media (orientation: portrait) and (device-aspect-ratio: 9/18){
-  #btnv{
-    left: 15vw;
-    top: 175vw;
-  }
-
-  #btna{
-    top: 295vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 415vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-  #main{
-    padding-top: 20vw;
-  }
-}
-
-@media (device-height: 731px) and (device-width: 411px){
-  #btnv{
-    left: 15vw;
-    top: 161vw;
-  }
-
-  #btna{
-    top: 281vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 401vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-  #bigscreen{
-    display: none;
-  }
-}
-
-@media (orientation: portrait) and (device-width: 411px){
-  #btnv{
-    left: 15vw;
-    top: 170vw;
-  }
-
-  #btna{
-    top: 290vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 410vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: portrait) and (device-width: 320px){
-  #btnv{
-    left: 15vw;
-    top: 183vw;
-  }
-
-  #btna{
-    top: 303vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 423vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (device-height: 667px) and (device-width: 375px) {
-  .services{
-    margin-top: 465vw;
-    }
-    #btnv{
-      left: 15vw;
-      top: 167vw;
-    }
-
-    #btna{
-      top: 282vw;
-      left: 15vw;
-    }
-
-    #btne{
-      top: 397vw;
-      left: 15vw;
-    }
-}
-
-@media (device-height: 812px) and (device-width: 375px) {
-  .services{
-    margin-top: 465vw;
-  }
-  #btnv{
-    left: 15vw;
-    top: 167vw;
-  }
-
-  #btna{
-    top: 282vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 397vw;
-    left: 15vw;
-  }
-}
-
-@media (device-height: 640px) and (device-width: 360px){
-  #btnv{
-    left: 15vw;
-    top: 173vw;
-  }
-
-  #btna{
-    top: 293vw;
-    left: 15vw;
-  }
-  #btne{
-    top: 413vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 480vw;
-  }
-}
-
-@media (device-width: 414px) and (device-height: 736px){
-  #btnv{
-    left: 15vw;
-    top: 160vw;
-  }
-  #main{
-    padding-top: 20vw;
-  }
-  #btna{
-    top: 280vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 400vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 485vw;
-  }
-}
-
-@media (device-width: 640px) and (device-height: 360px){
-  #btnv{
-    left: 15vw;
-    top: 154vw;
-  }
-
-  #btna{
-    top: 274vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 394vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-
-@media (orientation: landscape) and (device-height: 411px){
-  #btnv{
-    left: 15vw;
-    top: 154vw;
-  }
-
-  #btna{
-    top: 274vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 394vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: landscape) and (device-height: 360px){
-  #btnv{
-    left: 15vw;
-    top: 159vw;
-  }
-
-  #btna{
-    top: 279vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 399vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: landscape) and (device-height: 414px){
-  #btnv{
-    left: 15vw;
-    top: 159vw;
-  }
-
-  #btna{
-    top: 279vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 399vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: landscape) and (device-height: 375px){
-  #btnv{
-    left: 15vw;
-    top: 156vw;
-  }
-
-  #btna{
-    top: 276vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 396vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: landscape) and (device-height: 375px){
-  #btnv{
-    left: 15vw;
-    top: 159vw;
-  }
-
-  #btna{
-    top: 279vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 399vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: landscape) and (device-height: 320px){
-  #btnv{
-    left: 15vw;
-    top: 161vw;
-  }
-
-  #btna{
-    top: 261vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 401vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (orientation: landscape) and (device-width: 980px){
-  #btnv{
-    left: 15vw;
-    top: 154vw;
-  }
-
-  #btna{
-    top: 274vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 394vw;
-    left: 15vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-}
-
-@media (device-height: 1024px) and (device-width: 768px){
-  #btnv{
-    left: 15vw;
-    top: 155vw;
-  }
-
-  #btna{
-    top: 275vw;
-    left: 15vw;
-  }
-
-  #btne{
-    top: 395vw;
-    left: 15vw;
-  }
-  .title{
-    font-size: 3.5vw;
-  }
-  .services{
-    margin-top: 477vw;
-  }
-  #pageprof p{
-    font-size: 2vw;
-  }
-}
-
-@media (device-width: 1024px) and (device-height: 1366px){
-  .btnprof .titre{
-    font-size: 2vw;
-    left: 7.5vw;
-    top: -0.5vw;
-  }
-  #btnv .titre{
-    left: 6.5vw;
-  }
-  #pageprof .profilimg{
-    max-width: 13vw;
-  }
-  #pageprof #valentin .profilimg{
-    top: 61vw;
-  }
-  #pageprof #adrien .profilimg{
-    top: 110vw;
-  }
-  #pageprof #ethan .profilimg{
-    top: 161vw;
-  }
-
-  @media (max-width: 960px) {
-    .bigscreen{
-      display: none;
-    }
-    #menu{
-      display: block;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    header h1{
-      font-size: 4vw;
-    }
-    header h3{
-      font-size: 1.2vw;
-    }
-  }
