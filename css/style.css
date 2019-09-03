@@ -505,6 +505,15 @@ color: #D3D0CB;
   }
 }
 
+@media (min-device-width: 960px){
+  .mobprofils{
+    display: none;
+  }
+  .profils{
+    display: block;
+  }
+}
+
 @media screen and (max-width: 960px) {
   #menu {
     display: block;
@@ -524,6 +533,12 @@ color: #D3D0CB;
   }
   #logotel{
     display: none;
+  }
+  .mobprofils{
+    display: none;
+  }
+  .profils{
+    display: block;
   }
 }
 
