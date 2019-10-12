@@ -474,6 +474,10 @@ color: #D3D0CB;
   .profimg{
     min-width: 50vw;
   }
+  .profimgp{
+    min-width: 35vw;
+    text-align: center;
+  }
   .info{
     vertical-align: middle;
     margin-top: -2vh;
@@ -494,5 +498,9 @@ color: #D3D0CB;
   }
   .sl{
     margin-top: 45vh;
+  }
+  p{
+    font-size: 1.3vw;
+    line-height: 1.5vh;
   }
 }
