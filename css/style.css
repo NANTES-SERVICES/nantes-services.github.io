@@ -26,10 +26,10 @@ body{
   margin: 0;
 }
 
-hr{
-  width: 75vw;
-  background-color: #D3D0CB;
-  margin-bottom: 4vw;
+
+
+#main > h1{
+  font-size: 2.5vw;
 }
 
 a{
@@ -331,11 +331,11 @@ header h3{
 }
 
 #pageprof a img:hover{
-border-radius: 360px;
+  border-radius: 360px;
 }
 
 #pageprof > p > a:hover{
-color: #D3D0CB;
+  color: #D3D0CB;
 }
 
 #pageprof p{
@@ -463,6 +463,17 @@ color: #D3D0CB;
   display: inline-block;
 }
 
+u{
+  text-decoration: underline #ff0000;
+}
+
+hr{
+  width: 75vw;
+  background-color: #00FFFF;
+  color: #00FFFF;
+  margin-bottom: 4vw;
+}
+
 @media (max-device-width: 960px) {
   .profacc{
     display: block;
@@ -475,8 +486,9 @@ color: #D3D0CB;
     min-width: 50vw;
   }
   .profimgp{
-    min-width: 35vw;
+    min-width: 32vw;
     text-align: center;
+    margin-left: -2vw;
   }
   .info{
     vertical-align: middle;
@@ -500,7 +512,13 @@ color: #D3D0CB;
     margin-top: 45vh;
   }
   p{
-    font-size: 1.3vw;
-    line-height: 1.5vh;
+    font-size: 1.7vw;
+    line-height: 1.7vh;
+  }
+  .name{
+    min-width: 60vw;
+  }
+  .naame{
+    margin-left: -18vw;
   }
 }
