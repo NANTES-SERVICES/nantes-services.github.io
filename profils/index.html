@@ -8,71 +8,174 @@
   <link rel="apple-touch-icon" href="../img/icon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../js/main.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </head>
 <body>
   <header>
     <img id="logo" src="../img/icon.png" alt="">
-    <img id="logotel" src="../img/icon.png" alt="">
-    <h1 class="titre center">NAnTES SERVICeS</h1>
-    <h3 class="center desc">Nous rendons diverts services au sud de Nantes...</h3>
-    <nav class="center" id="bigscreen">
-
-      <ul>
-        <li><a href="../accueil/index.html" class="nonb active">ACCUEIL</a></li>
-        <li><a class="nonb" href="../profils/index.html">PROFILS</a></li>
-        <li><a class="nonb" href="../services/index.html">SERVICES</a></li>
-        <li><a class="nonb" href="../contact/index.html">CONTACT</a></li>
-        <li><a class="nonb" href="../legal/index.html">MENTIONS LÉGALES</a></li>
-      </ul>
+    <img id="logoL" src="../img/icon.png" alt="">
+    <p class="center"><img src="../img/titre.png" class="titre" alt=""></p>
+    <nav class="center">
+      <div id="menu" class="center">
+        <div class="nonb center btnmenu" id="menu1" onclick="afficheMenu(this), cacheMain(this)">
+          <a class="nonb" class="btnmenu" href="#"><img src="../img/sort-down.png" class="downArrow btnmenu" alt=""></a>
+        </div>
+      </div>
     </nav>
   </header>
-  <nav>
-    <div id="menu">
-      <div class="menu" id="menu1" onclick="afficheMenu(this), cacheMain(this)">
-        <a class="nonb" href="#"><img src="../img/deroulant.png" alt=""></a>
-      </div>
-      <div id="sousmenu1" style="display:none">
-        <div class="sousmenu sm1">
-          <a class="nonb" href="../accueil/index.html" class="active">ACCUEIL</a>
-        </div>
-        <div class="sousmenu">
-          <a class="nonb" href="../profils/index.html">PROFILS</a>
-        </div>
-        <div class="sousmenu">
-          <a class="nonb" href="../services/index.html">SERVICES</a>
-        </div>
-        <div class="sousmenu">
-          <a class="nonb" href="../contact/index.html">CONTACT</a>
-        </div>
-        <div class="sousmenu sm5">
-          <a class="nonb" href="../legal/index.html">MENTIONS LÉGALES</a>
-        </div>
-      </div>
+  <div id="sousmenu1" style="display:none">
+    <div class="sousmenu sm1">
+      <a class="nonb" href="../accueil/index.html" class="active">ACCUEIL</a>
     </div>
-  </nav>
+    <div class="sousmenu">
+      <a class="nonb" href="../profils/index.html">PROFILS</a>
+    </div>
+    <div class="sousmenu">
+      <a class="nonb" href="../services/index.html">SERVICES</a>
+    </div>
+    <div class="sousmenu">
+      <a class="nonb" href="../contact/index.html">CONTACT</a>
+    </div>
+    <div class="sousmenu sm5">
+      <a class="nonb" href="../legal/index.html">MENTIONS LÉGALES</a>
+    </div>
+  </div>
   <section id="main">
-    <section id="pageprof">
-      <div id="jonah">
-        <h1 class="titre center">JONAH</h1>
-          <img class="profilimg" src="../img/jonah.JPG" alt="">
-        <p>Bonjour, je m'appelle Jonah, j'ai 16 ans et j'habite dans le centre ville de Vertou. <br><br>Je fais beaucoup de sport ce qui me rend apte à faire des travaux physique tels que des tontes de pelouses, des tailles de haies et tout autres travaux manuels. Je peux aussi réparer certains objets cassés ou, ayant aussi quelques connaissances en informatique, je peux résoudre certains de vos petits problèmes du quotidien en informatique. <br><br> J'accepte seulement les paiements en espèces. N'hésitez pas à me joindre au <a class="nonb" href="tel:+33642522103">06 42 52 21 03</a> <br><br>Merci pour votre temps passé sur notre site.<br><br> SERVICES RENDUS : BRICOLAGE ET PETITS TRAVAUX, TONTES ET JARDINAGE, ASSISTANCE INFORMATIQUE <br><br> TARIF : À DÉFINIR SELON LE SERVICE</p>
+    <div class="profils">
+      <div class="prof">
+        <img class="ele" src="../img/brean.png" alt="">
+        <p class="center ele"> <img class="name ele" src="../img/bt.png" alt=""></p>
       </div>
-      <div id="valentin">
-        <h1 class="titre center">VALENTIN</h1>
-          <img class="profilimg" src="../img/valen.JPG" alt="">
-        <p>Bonjour, je m'appelle Valentin, j’ai 16 ans et je me situe à Saint Sébastien sur Loire. <br><br>Je suis motivé pour rendre des service de tous types tant que cela reste dans mes compétences. Cela peut inclure du bricolage et des petits travaux ou du jardinage par exemple. Je suis aussi prêt à aider vos enfants jusqu'en 3ème (je suis en première spécialité math, physique-chimie et SVT) en mathématiques<br><br>Les paiements en espèces me conviennent mais je reste ouvert a tout autre type de paiement (PayPal...). Vous pouvez me joindre au <a class="nonb" href="tel:+33783187771">07 83 18 77 71</a> ou par mail <a class="nonb" href="mailto:valgil4482@gmail.com?subject=Demande de service" target="_blank">valgil4482@gmail.com</a>. <br><br>En vous souhaitant une bonne journée/soirée.<br><br> SERVICES RENDUS : BRICOLAGE ET PETITS TRAVAUX, JARDINAGE, ASSISTANCE SCOLAIRE EN MATHÉMATIQUES, AIDE AU DÉMÉNAGEMENT <br><br> TARIF : À DÉFINIR SELON LE SERVICE</p>
+      <p class="center" >Bonjour, je m’appelle Bréan et j'habite à la Chevrolière.</p>
+      <p class="center" >EXCPLICATION SERVICE</p>
+      <p class="center" >MODE PAIEMENT. Pour toutes demandes de renseignements ou de services, contactez moi au <a class="nonb telmail" href="tel:+33"></a> ou</p>
+      <p class="center"> sur <a class="nonb telmail" href="mailto:"></a>.</p>
+      <br>
+      <p class="center" >En vous remerciant de votre confiance.</p>
+      <br>
+      <h3 class="center">SERVICES RENDUS : ASSISTANCE INFORMATIQUE, MONTAGES VIDÉOS/PHOTOS, BRICOLAGE ET PETITS TRAVAUX [...]</h3>
+      <br>
+      <h3 class="center">TARIF : À DÉFINIR SELON SERVICE</h3>
+      <p class="btnprof center"><a href="../profils/index.html#brean">VOIR LE PROFIL</a></p>
+
+
+      <div class="prof">
+        <img class="ele" src="../img/victo.png" alt="">
+        <p class="center ele">  <img class="ele name" src="../img/vit.png"alt=""></p>
       </div>
-      <div id="adrien">
-        <h1 class="titre center">ADRIEN</h1>
-          <img class="profilimg" src="../img/ardie.JPG" alt="">
-        <p>Bonjour, je m'appelle Adrien et je me situe à Rezé. <br> <br> Je suis depuis plusieurs années passionné d'informatique, c'est pour cela que je vous propose mon aide sur des problème du quotidien. Je m'occupe notamment d'installations Windows, Mac et Linux (la clef Windows est à votre charge) pour 40€ et du paramétrage pour 30€ supplémentaires, d'installations de logiciels pour 15€ par logiciels, de réinitialisations de Windows pour 35€, de néttoyages (logiciels) PC pour 50€ et d'installations de matériel(s) réseaux (BOX, CPL) pour 50€. <br> <br> J'accepte les règlements en espèces et bitcoin. Vous pouvez me contactez au <a class="nonb" href="tel:+33647505806">06 47 50 58 06</a> (appel Signal et Telegram compatible). <br> <br> Je vous remercie de votre confiance. <br> <br> SERVICES RENDUS : ASSISTANCE INFORMATIQUE <br><br> TARIF : 15 à 50 €</p>
+      <p class="center" >Bonjour, je m’appelle Victoria et j'habite à Bouguenais.</p>
+      <p class="center">Je me rend disponible pour garder vos enfants agé(e)s de 3 ans ou plus.</p>
+      <p class="center" >MODE PAIEMENT. Si jamais, vous pouvez me contacter au <a class="nonb telmail" href="tel:+33621723330">06 21 72 33 30</a>.</p>
+      <br>
+      <p class="center" >Merci pour votre attention.</p>
+      <br>
+      <h3 class="center">SERVICES RENDUS : ASSISTANCE INFORMATIQUE, MONTAGES VIDÉOS/PHOTOS, BRICOLAGE ET PETITS TRAVAUX [...]</h3>
+      <br>
+      <h3 class="center">TARIF : À DÉFINIR SELON SERVICE</h3>
+      <p class="btnprof center"><a href="../profils/index.html#victoria">VOIR LE PROFIL</a></p>
+
+
+      <div class="prof">
+        <img class="ele" src="../img/ethan.png" alt="">
+        <p class="center ele">  <img class="ele name" src="../img/et.png"alt=""></p>
       </div>
-      <div id="ethan">
-        <h1 class="titre center">ETHAN</h1>
-        <img class="profilimg" src="../img/ethan.JPG" alt="">
-        <p>Bonjour, je m’appelle Ethan et je me situe à Rezé. <br><br>Je suis prêt à vous rendre des services dans le domaine de l’informatique, ma passion, mais aussi à effectuer des travaux plus manuels comme des tontes ou du bricolage. <br><br>J’accepte seulement les règlements en espèces mais PayPal reste possible. N’hésitez pas à me contactez au <a class="nonb" href="tel:+33782534496">07 82 53 44 96</a> ou sur <a class="nonb" href="mailto:ethanbg@free.fr?subject=Demande de service" target="_blank">ethanbg@free.fr</a>.<br><br>En vous remerciant de votre confiance.<br> <br> SERVICES RENDUS : ASSISTANCE INFORMATIQUE, MONTAGES VIDÉOS/PHOTOS, BRICOLAGE ET PETITS TRAVAUX, TONTES ET JARDINAGES, AIDE AU DÉMENAGEMENT<br><br> TARIF : À DÉFINIR SELON SERVICE</p>
+      <p class="center" >Bonjour, je m’appelle Ethan et j'habite à Rezé.</p>
+      <p class="center" >Je suis prêt à vous rendre des services dans le domaine de l’informatique, ma passion, mais aussi à effectuer des travaux plus manuels comme des tontes ou du bricolage.</p>
+      <p class="center" >J'accepte seulement les règlements en espèce mais PayPal reste possible. N’hésitez pas à me contacter au <a class="nonb telmail" href="tel:+33782534496">07 82 53 44 96</a> ou</p>
+      <p class="center"> sur <a class="nonb telmail" href="mailto:ethanbg@free.fr">ethanbg@free.fr</a>.</p>
+      <br>
+      <p class="center" >En vous remerciant de votre confiance.</p>
+      <br>
+      <h3 class="center">SERVICES RENDUS : ASSISTANCE INFORMATIQUE, MONTAGES VIDÉOS/PHOTOS, BRICOLAGE ET PETITS TRAVAUX [...]</h3>
+      <br>
+      <h3 class="center">TARIF : À DÉFINIR SELON SERVICE</h3>
+      <p class="btnprof center"><a href="../profils/index.html#ethan">VOIR LE PROFIL</a></p>
+
+
+      <div class="prof">
+        <img class="ele" src="../img/eva.png" alt="">
+        <p class="center ele">  <img class="ele name" src="../img/evt.png"alt=""></p>
       </div>
-    </section>
-  </section>
-</body>
-</html>
+      <p class="center" >Bonjour, je m’appelle Eva et j'habite à Sainte Pazanne.</p>
+      <p class="center" >EXCPLICATION SERVICE</p>
+      <p class="center" >MODE PAIEMENT. Si vous êtes intéressé(e), vous pouvez me contacter au <a class="nonb telmail" href="tel:+33"></a> ou</p>
+      <p class="center"> sur <a class="nonb telmail" href="mailto:"></a>.</p>
+      <br>
+      <p class="center" >Bonne journée.</p>
+      <br>
+      <h3 class="center">SERVICES RENDUS : ASSISTANCE INFORMATIQUE, MONTAGES VIDÉOS/PHOTOS, BRICOLAGE ET PETITS TRAVAUX [...]</h3>
+      <br>
+      <h3 class="center">TARIF : À DÉFINIR SELON SERVICE</h3>
+      <p class="btnprof center"><a href="../profils/index.html#eva">VOIR LE PROFIL</a></p>
+
+
+      <div class="prof">
+        <img class="ele" src="../img/jonah.png" alt="">
+        <p class="center ele">  <img class="ele name" src="../img/jt.png"alt=""></p>
+      </div>
+      <p class="center" >Bonjour, je m'appelle Jonah, j'ai 16 ans et j'habite dans le centre ville de Vertou.
+        <p class="center">Je fais beaucoup de sport ce qui me rend apte à faire des travaux physique tels que des tontes, des tailles de haies ou de la reparation de certains objets cassés. J'ai aussi quelques connaissances en informatique pour les petits problèmes du quotidien.</p>
+        <p class="center">J'accepte seulement les paiements en espèces. N'hésitez pas à me joindre au <a class="nonb telmail" href="tel:+33642522103">06 42 52 21 03</a></p>
+        <br>
+        <p class="center">Merci pour votre temps passé sur notre site.</p>
+        <br>
+        <h3 class="center"> SERVICES RENDUS : BRICOLAGE ET PETITS TRAVAUX [...]</h3>
+        <br>
+        <h3 class="center">TARIF : À DÉFINIR SELON LE SERVICE</h3>
+        <p class="btnprof center"><a href="../profils/index.html#jonah">VOIR LE PROFIL</a></p>
+
+
+        <div class="prof">
+          <img class="ele" src="../img/ocean.png" alt="">
+          <p class="center ele">  <img class="ele name" src="../img/ot.png"alt=""></p>
+        </div>
+        <p class="center" >Bonjour, je m’appelle Océane et j'habite à Bouguenais.</p>
+        <p class="center" >EXCPLICATION SERVICE</p>
+        <p class="center" >MODE PAIEMENT. Vous pouvez me contacter, si vous le souhaitez, au <a class="nonb telmail" href="tel:+33"></a> ou</p>
+        <p class="center"> sur <a class="nonb telmail" href="mailto:"></a>.</p>
+        <br>
+        <p class="center" >Merci et bonne journée.</p>
+        <br>
+        <h3 class="center">SERVICES RENDUS : ASSISTANCE INFORMATIQUE, MONTAGES VIDÉOS/PHOTOS, BRICOLAGE ET PETITS TRAVAUX [...]</h3>
+        <br>
+        <h3 class="center">TARIF : À DÉFINIR SELON SERVICE</h3>
+        <p class="btnprof center"><a href="../profils/index.html#oceane">VOIR LE PROFIL</a></p>
+
+
+        <div class="prof">
+          <img class="ele" src="../img/adrie.png" alt="">
+          <p class="center ele">  <img class="ele name" src="../img/at.png"alt=""></p>
+        </div>
+        <p class="center" >Bonjour, je m'appelle Adrien et j'habite à Rezé.</p>
+        <p class="center" >Je suis depuis plusieurs années passionné d'informatique, c'est pour cela que je vous propose mon aide sur des problème du quotidien.</p>
+        <p class="center" >J'accepte les règlements en espèce et bitcoin. Vous pouvez me contactez au <a class="nonb telmail" href="tel:+33647505806">06 47 50 58 06</a> (appel Signal et Telegram compatible).</p>
+        <br>
+        <p class="center" >Je vous remercie de votre confiance.</p>
+        <br>
+        <h3 class="center">SERVICES RENDUS : ASSISTANCE INFORMATIQUE</h3>
+        <br>
+        <h3 class="center">TARIF : 15 à 50 €</h3>
+        <p class="btnprof center"><a href="../profils/index.html#adrien">VOIR LE PROFIL</a></p>
+
+
+        <div class="prof">
+          <img class="ele" src="../img/valen.png" alt="">
+          <p class="center ele">  <img class="ele name" src="../img/vt.png"alt=""></p>
+        </div>
+        <p class="center" >Bonjour, je m'appelle Valentin, j’ai 16 ans et j'habite à Saint Sébastien sur Loire.
+          <p class="center">Je suis motivé pour rendre des service de tous types tant que cela reste dans mes compétences. Cela peut inclure du bricolage et des petits travaux ou du jardinage par exemple...</p>
+          <p class="center">Les paiements en espèce me conviennent mais je reste ouvert a tout autre type de paiement (PayPal...). Vous pouvez me joindre</p>
+          <p class="center">au <a class="nonb telmail" href="tel:+33783187771">07 83 18 77 71</a> ou par mail <a class="nonb telmail" href="mailto:valgil4482@gmail.com">valgil4482@gmail.com</a>.</p>
+          <br>
+          <p class="center">En vous souhaitant une bonne journée/soirée.</p>
+          <br>
+          <h3 class="center">SERVICES RENDUS : BRICOLAGE ET PETITS TRAVAUX, JARDINAGE [...]</h3>
+          <br>
+          <h3 class="center">TARIF : À DÉFINIR SELON LE SERVICE</h3>
+          <p class="btnprof center"><a href="../profils/index.html#valentin">VOIR LE PROFIL</a></p>
+          <br>
+        </div>
+
+      </div>
+  </body>
+  </html>

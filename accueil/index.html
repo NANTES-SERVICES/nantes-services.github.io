@@ -8,154 +8,159 @@
   <link rel="apple-touch-icon" href="../img/icon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../js/main.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </head>
 <body>
   <header>
     <img id="logo" src="../img/icon.png" alt="">
-    <img id="logotel" src="../img/icon.png" alt="">
-    <h1 class="titre center">NAnTES SERVICeS</h1>
-    <h3 class="center desc">Nous rendons diverts services au sud de Nantes...</h3>
-    <nav class="center" id="bigscreen">
-      <ul>
-        <li><a href="../accueil/index.html" class="nonb">ACCUEIL</a></li>
-        <li><a class="nonb active" href="../profils/index.html">PROFILS</a></li>
-        <li><a class="nonb" href="../services/index.html">SERVICES</a></li>
-        <li><a class="nonb" href="../contact/index.html">CONTACT</a></li>
-        <li><a class="nonb" href="../legal/index.html">MENTIONS LÉGALES</a></li>
-      </ul>
+    <img id="logoL" src="../img/icon.png" alt="">
+    <p class="center"><img src="../img/titre.png" class="titre" alt=""></p>
+    <nav class="center">
+      <div id="menu" class="center">
+        <div class="nonb center btnmenu" id="menu1" onclick="afficheMenu(this), cacheMain(this)">
+          <a class="nonb" class="btnmenu" href="#"><img src="../img/sort-down.png" class="downArrow btnmenu" alt=""></a>
+        </div>
+      </div>
     </nav>
   </header>
-  <nav>
-    <div id="menu">
-      <div class="menu" id="menu1" onclick="afficheMenu(this), cacheMain(this)">
-        <a class="nonb" href="#"><img src="../img/deroulant.png" alt=""></a>
-      </div>
-      <div id="sousmenu1" style="display:none">
-        <div class="sousmenu sm1">
-          <a class="nonb" href="../accueil/index.html" class="active">ACCUEIL</a>
-        </div>
-        <div class="sousmenu">
-          <a class="nonb" href="../profils/index.html">PROFILS</a>
-        </div>
-        <div class="sousmenu">
-          <a class="nonb" href="../services/index.html">SERVICES</a>
-        </div>
-        <div class="sousmenu">
-          <a class="nonb" href="../contact/index.html">CONTACT</a>
-        </div>
-        <div class="sousmenu sm5">
-          <a class="nonb" href="../legal/index.html">MENTIONS LÉGALES</a>
-        </div>
-      </div>
+  <div id="sousmenu1" style="display:none">
+    <div class="sousmenu sm1">
+      <a class="nonb" href="../accueil/index.html" class="active">ACCUEIL</a>
     </div>
-  </nav>
+    <div class="sousmenu">
+      <a class="nonb" href="../profils/index.html">PROFILS</a>
+    </div>
+    <div class="sousmenu">
+      <a class="nonb" href="../services/index.html">SERVICES</a>
+    </div>
+    <div class="sousmenu">
+      <a class="nonb" href="../contact/index.html">CONTACT</a>
+    </div>
+    <div class="sousmenu sm5">
+      <a class="nonb" href="../legal/index.html">MENTIONS LÉGALES</a>
+    </div>
+  </div>
   <section id="main">
-    <h1 class="center title">QUATRE JEUNES VOUS RENDENT SERVICES :</h1>
+    <h1 class="center title">HUIT JEUNES VOUS RENDENT SERVICES :</h1>
     <div class="para">
-      <p>Jonah, Valentin, Adrien et Ethan sont quatre jeunes prêts à vous rendre de nombreux services dans la métropole sud de Nantes (Rezé, Sorinières, Saint-Sébastien...)...</p>
+      <p>Brean, Victoria, Ethan, Eva, Jonah, Océane, Adrien et Valentin sont huit jeunes prêts à vous rendre de nombreux services dans la métropole sud de Nantes (Rezé, Sorinières, Saint-Sébastien, Bouguenais, Sainte Pazanne et la Chevrolière ...)...</p>
     </div>
-    <div class="profils">
-      <div id="btnj" class="btnprof">
-        <a class="nonb" href="../profils/index.html#jonah"> <h1 class="titre">JONAH</h1> </a>
-        <a class="nonb" href="../profils/index.html#jonah"> <img src="../img/jonah.JPG" alt=""> </a>
-        <p>Bonjour, je m'appelle Jonah, j'ai 16 ans et j'habite dans le centre ville de Vertou. <br><br>Je fais beaucoup de sport ce qui me rend apte à faire des travaux physique tels que des tontes, des tailles de haies ou de la reparation de certains objets cassés. J'ai aussi quelques connaissances en informatique pour les petits problèmes du quotidien. <br><br> J'accepte seulement les paiements en espèces. N'hésitez pas à me joindre au <a class="nonb" href="tel:+33642522103">06 42 52 21 03</a> <br><br>Merci pour votre temps passé sur notre site.<br><br> SERVICES RENDUS : BRICOLAGE ET PETITS TRAVAUX [...] <br><br> TARIF : À DÉFINIR SELON LE SERVICE</p>
-        <a class="vp" href="../profils/index.html#jonah">VOIR LE PROFIL</a>
+    <div class="profilsacc">
+      <div class="profacc" id="brean">
+      <p class="center"><img class="profimg" src="../img/brean.png" alt=""></p>
+        <p class="center"><img class="name2" src="../img/bt.png" alt=""></p>
+        <p class="info center"><img src="../img/support.png" alt=""> SERVICE </p>
+        <br> <br> <br>
+        <p class="info2 center"><img src="../img/placeholder.png" alt=""> La Chevrolière </p>
+        <p class="btnprof center"><a href="../profils/index.html#brean">VOIR LE PROFIL</a></p>
       </div>
-      <div id="btnv" class="btnprof">
-        <a class="nonb" href="../profils/index.html#valentin"> <h1 class="titre">VALENTIN</h1> </a>
-        <a class="nonb" href="../profils/index.html#valentin"> <img src="../img/valen.JPG" alt=""> </a>
-        <p>Bonjour, je m'appelle Valentin, j’ai 16 ans et je me situe à Saint Sébastien sur Loire. <br><br>Je suis motivé pour rendre des service de tous types tant que cela reste dans mes compétences. Cela peut inclure du bricolage et des petits travaux ou du jardinage par exemple...<br><br>Les paiements en espèce me conviennent mais je reste ouvert a tout autre type de paiement (PayPal...). Vous pouvez me joindre au <a class="nonb" href="tel:+33783187771">07 83 18 77 71</a> ou par mail <a class="nonb" href="mailto:valgil4482@gmail.com?subject=Demande de service" target="_blank">valgil4482@gmail.com</a>. <br><br>En vous souhaitant une bonne journée/soirée.<br><br> SERVICES RENDUS : BRICOLAGE ET PETITS TRAVAUX, JARDINAGE [...]<br><br> TARIF : À DÉFINIR SELON LE SERVICE
-        </p>
-        <a class="vp" href="../profils/index.html#valentin">VOIR LE PROFIL</a>
+
+      <div class="profacc">
+        <div class="center">
+        <p class="center"><img class="profimg" src="../img/victo.png" alt=""></p>
+        <p class="center"><img class="name2" src="../img/vit.png"alt=""></p>
+        <p class="info center"><img src="../img/support.png" alt=""> BABYSITTING </p>
+        <br> <br> <br>
+        <p class="info2 center"><img src="../img/placeholder.png" alt=""> Bouguenais </p>
+        <p class="btnprof center"><a href="../profils/index.html#victoria">VOIR LE PROFIL</a></p>
+        </div>
       </div>
-      <div id="btna" class="btnprof">
-        <a class="nonb" href="../profils/index.html#adrien"> <h1 class="titre">ADRIEN</h1> </a>
-        <a class="nonb" href="../profils/index.html#adrien"> <img src="../img/ardie.JPG" alt=""> </a>
-        <p>Bonjour, je m'appelle Adrien et je me situe à Rezé. <br> <br> Je suis depuis plusieurs années passionné d'informatique, c'est pour cela que je vous propose mon aide sur des problème du quotidien. <br> <br> J'accepte les règlements en espèce et bitcoin. Vous pouvez me contactez au <a class="nonb" href="tel:+33647505806">06 47 50 58 06</a> (appel Signal et Telegram compatible). <br> <br> Je vous remercie de votre confiance. <br> <br> SERVICES RENDUS : ASSISTANCE INFORMATIQUE <br><br> TARIF : 15 à 50 €
-        </p>
-        <a class="vp" href="../profils/index.html#adrien">VOIR LE PROFIL</a>
+
+      <div class="profacc">
+        <div class="center">
+        <p class="center"><img class="profimg" src="../img/ethan.png" alt=""></p>
+        <p class="center"><img class="name2" src="../img/et.png"alt=""></p>
+        <p class="info center"><img src="../img/support.png" alt=""> ASSISTANCE INFORMATIQUE, <br> MONTAGE VIDÉO / PHOTO [...]</p>
+        <br> <br>
+        <p class="info2 center"><img src="../img/placeholder.png" alt=""> Rezé </p>
+        <p class="btnprof center"><a href="../profils/index.html#ethan">VOIR LE PROFIL</a></p>
+        </div>
       </div>
-      <div id="btne" class="btnprof">
-        <a class="nonb" href="../profils/index.html#ethan"> <h1 class="titre">ETHAN</h1> </a>
-        <a class="nonb" href="../profils/index.html#ethan"> <img src="../img/ethan.JPG" alt=""> </a>
-        <p>Bonjour, je m’appelle Ethan et je me situe à Rezé. <br><br>Je suis prêt à vous rendre des services dans le domaine de l’informatique, ma passion, mais aussi à effectuer des travaux plus manuels comme des tontes ou du bricolage. <br><br>J’accepte seulement les règlements en espèce mais PayPal reste possible. N’hésitez pas à me contactez au <a class="nonb" href="tel:+33782534496">07 82 53 44 96</a> ou sur <a class="nonb" href="mailto:ethanbg@free.fr?subject=Demande de service" target="_blank">ethanbg@free.fr</a>.<br><br>En vous remerciant de votre confiance.<br> <br> SERVICES RENDUS : ASSISTANCE INFORMATIQUE, MONTAGES VIDÉOS/PHOTOS, BRICOLAGE ET PETITS TRAVAUX [...] <br><br> TARIF : À DÉFINIR SELON SERVICE
-        </p>
-        <a class="vp" href="../profils/index.html#ethan">VOIR LE PROFIL</a>
+
+      <div class="profacc">
+        <div class="center">
+        <p class="center"><img class="profimg" src="../img/eva.png" alt=""></p>
+        <p class="center"><img class="name2" src="../img/evt.png"alt=""></p>
+        <p class="info center"><img src="../img/support.png" alt=""> BABYSITTING </p>
+        <br> <br><br>
+        <p class="info2 center"><img src="../img/placeholder.png" alt=""> Sainte Pazanne </p>
+        <p class="btnprof center"><a href="../profils/index.html#eva">VOIR LE PROFIL</a></p>
+        </div>
       </div>
-    </div>
-    <div class="mobprofils">
-      <div id="btnj" class="mobbtnprofj mobbtnprof">
-        <a class="nonb" href="../profils/index.html#jonah"> <img src="../img/jonah.JPG" alt=""> </a>
-        <a class="nonb" href="../profils/index.html#jonah"> <h1 class="mobtitre">JONAH</h1> </a>
-        <p>SERVICES: </p>
-        <ul>
-          <li>BRICOLAGE ET PETITS TRAVAUX</li>
-          <li>ASSISTANCE INFORMATIQUE</li>
-        </ul>
-        <p class="troispts">[...]</p>
-        <a class="mobvp" href="../profils/index.html#jonah"> <img src="../img/right-arrow-after.png" alt=""> </a>
+
+      <div class="profacc">
+        <div class="center">
+        <p class="center"><img class="profimg" src="../img/jonah.png" alt=""></p>
+        <p class="center"><img class="name2" src="../img/jt.png"alt=""></p>
+        <p class="info center"><img src="../img/support.png" alt=""> BRICOLAGE, JARDINAGE [...] </p>
+        <br> <br><br>
+        <p class="info2 center"><img src="../img/placeholder.png" alt=""> Vertou </p>
+        <p class="btnprof center"><a href="../profils/index.html#jonah">VOIR LE PROFIL</a></p>
+        </div>
+      </div>
+
+        <div class="profacc">
+          <div class="center">
+          <p class="center"><img class="profimg" src="../img/ocean.png" alt=""></p>
+          <p class="center"><img class="name2" src="../img/ot.png"alt=""></p>
+          <p class="info center"><img src="../img/support.png" alt=""> BABYSITTING </p>
+          <br> <br><br>
+          <p class="info2 center"><img src="../img/placeholder.png" alt=""> Bouguenais </p>
+          <p class="btnprof center"><a href="../profils/index.html#oceane">VOIR LE PROFIL</a></p>
+          </div>
+        </div>
+
+        <div class="profacc">
+          <div class="">
+          <p class="center"><img class="profimg" src="../img/adrie.png" alt=""></p>
+          <p class="center"><img class="name2" src="../img/at.png"alt=""></p>
+            <p class="info center"><img src="../img/support.png" alt=""> ASSISTANCE INFORMATIQUE</p>
+            <br> <br><br>
+            <p class="info2 center"><img src="../img/placeholder.png" alt=""> Rezé </p>
+          <p class="btnprof center"><a href="../profils/index.html#adrien">VOIR LE PROFIL</a></p>
+          </div>
+        </div>
+
+        <div class="profacc">
+          <div class="">
+          <p class="center"><img class="profimg" src="../img/valen.png" alt=""></p>
+          <p class="center"><img class="name2" src="../img/vt.png"alt=""></p>
+            <p class="info center"><img src="../img/support.png" alt=""> BRICOLAGE, JARDINAGE [...]</p>
+            <br> <br><br>
+            <p class="info2 center"><img src="../img/placeholder.png" alt=""> Saint-Sébastien </p>
+            <p class="btnprof center"><a href="../profils/index.html#valentin">VOIR LE PROFIL</a></p>
+            </div>
+        </div>
+          <br>
+        </div>
 
       </div>
-      <div id="btnv" class="mobbtnprof">
-        <a class="nonb" href="../profils/index.html#valentin"> <img src="../img/valen.JPG" alt=""> </a>
-        <a class="nonb" href="../profils/index.html#valentin"> <h1 class="mobtitre mobtitrev">VALENTIN</h1> </a>
-        <p>SERVICES: </p>
-        <ul>
-          <li>BRICOLAGE ET PETITS TRAVAUX</li>
-          <li>JARDINAGE</li>
-        </ul>
-        <p class="troispts">[...]</p>
-        <a class="mobvp" href="../profils/index.html#valentin"> <img src="../img/right-arrow-after.png" alt=""> </a>
+      <div class="services">
+        <hr>
+        <h1 class="title center">UNE MULTITUDE DE SERVICES :</h1>
+        <div class="para">
+          <p>Nos huit compères peuvent vous rendent une multitudes de services, individulement ou à plusieurs.</p>
+        </div>
+        <h2 class="title center">LISTE ( NON-EXHAUSTIVE ) DES SERVICES RENDUS :</h2>
+        <div class="liste">
+          <ul class="sl1">
+            <li><p>Bricolage et petits travaux</p></li>
+            <br>
+            <li><p>Tonte, taillage de haie et autre petits <br> travaux de jadinage</p></li>
+            <br>
+            <li><p>Assistance informatique</p></li>
+            <br>
+          </ul>
+          <ul class="sl2">
+            <li><p>Garde de chien/chat (à votre domicile)</p></li>
+            <br>
+            <li><p>Montage vidéo</p></li>
+            <br>
+            <li><p>Montage photo</p></li>
+          </ul>
+        </div>
+        <p class="center sl"><a href="../services/">Voir la liste complète</a></p>
       </div>
-      <div id="btna" class="mobbtnprof">
-        <a class="nonb" href="../profils/index.html#adrien"> <img src="../img/ardie.JPG" alt=""> </a>
-        <a class="nonb" href="../profils/index.html#adrien"> <h1 class="mobtitre">ADRIEN</h1> </a>
-        <p>SERVICES: </p>
-        <ul>
-          <li>ASSISTANCE INFORMATIQUE</li>
-        </ul>
-        <p class="troispts">[...]</p>
-        <a class="mobvp" href="../profils/index.html#adrien"> <img src="../img/right-arrow-after.png" alt=""> </a>
-      </div>
-      <div id="btne" class="mobbtnprof">
-        <a class="nonb" href="../profils/index.html#ethan"> <img src="../img/ethan.JPG" alt=""> </a>
-        <a class="nonb" href="../profils/index.html#ethan"> <h1 class="mobtitre">ETHAN</h1> </a>
-        <p>SERVICES: </p>
-        <ul>
-          <li>ASSISTANCE INFORMATIQUE</li>
-          <li>MONTAGES VIDÉOS/PHOTOS</li>
-          <li>BRICOLAGE ET PETITS TRAVAUX</li>
-        </ul>
-        <p class="troispts">[...]</p>
-        <a class="mobvp" href="../profils/index.html#ethan"> <img src="../img/right-arrow-after.png" alt=""> </a>
-      </div>
-    </div>
-    <div class="services">
-      <hr>
-      <h1 class="title center">UNE MULTITUDE DE SERVICES :</h1>
-      <div class="para">
-        <p>Nos quatres compères peuvent vous rendrent une multitudes de services, individulement ou à plusieurs.</p>
-      </div>
-      <h2 class="title center">LISTE ( NON-EXHAUSTIVE ) DES SERVICES RENDUS :</h2>
-      <div class="liste">
-        <ul class="sl1">
-          <li><p>Bricolage et petits travaux</p></li>
-          <br>
-          <li><p>Tonte, taillage de haie et autre petits <br> travaux de jadinage</p></li>
-          <br>
-          <li><p>Assistance informatique</p></li>
-          <br>
-        </ul>
-        <ul class="sl2">
-          <li><p>Garde de chien/chat (à votre domicile)</p></li>
-          <br>
-          <li><p>Montage vidéo</p></li>
-          <br>
-          <li><p>Montage photo</p></li>
-        </ul>
-      </div>
-      <p class="center sl"><a  href="../services/">Voir la liste complète</a></p>
-    </div>
-  </section>
-</body>
-</html>
+    </section>
+  </body>
+  </html>

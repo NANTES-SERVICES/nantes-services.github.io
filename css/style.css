@@ -4,16 +4,16 @@
 }
 
 @font-face {
-  font-family: "MEROCHE";
+  font-family: "LEONARDO";
   src: url("../font/LEONARDO.otf");
 }
 
 :root{
   --background-color: #0A0908;
-  --titre-color: #D3D0CB;
+  --titre-color: #FFFFFF;
   --text-color: #F4F4F6;
   --text-font: 'ModernSans-Light';
-  --titre-font: "MEROCHE";
+  --titre-font: "LEONARDO";
 }
 
 body{
@@ -33,20 +33,26 @@ hr{
 }
 
 a{
-  background-color: #393E41;
+  background-color: #000000;
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
   padding-right: 1vw;
   padding-left: 1vw;
-  border-radius: 25px;
+  border-top: solid 3px #00ffff;
+  border-bottom: solid 3px #ff0000;
   text-decoration: none;
-  color: var(--text-color);
+  color: #FFFFFF;
+  transition-property: border-radius background-color color;
+  transition-duration: 0.5s;
 }
 
 a:hover{
-  color: #0A0908;
-  background-color: #D3D0CB;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 25px;
 }
+
+
 
 h1{
   font-size: 5vw;
@@ -54,6 +60,11 @@ h1{
 
 h3{
   font-size: 1.5vw;
+}
+
+#bigscreen{
+  background-color: #303030;
+  position: absolute;
 }
 
 p{
@@ -69,8 +80,7 @@ p{
 }
 
 .titre{
-  color: var(--titre-color);
-  font-family: var(--titre-font);
+  max-width: 30vw;
 }
 
 .center{
@@ -78,45 +88,26 @@ p{
 }
 
 header{
-  background-color: #393E41;
+  background-color: #303030;
   width: 100vw;
   margin-top: 0;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10001;
-}
-
-header h1{
-  margin-top: 0;
-  margin-bottom: 0;
+  z-index: 10000000000;
 }
 
 header h3{
   margin-top: 1vw;
 }
 
-header li{
-  list-style: none;
-}
-
-header a{
-  color: var(--titre-color);
-  font-size: 1.5vw;
-}
-
-header a:hover{
-  font-size: 1.5vw;
-  text-decoration: underline;
-}
-
-nav li{
-  display: inline-block;
-  margin-left: 2vw;
-}
-
 #menu{
   padding-bottom: 2vw;
+  margin: 0;
+}
+
+#menu1{
+  margin: 0;
 }
 
 #menu img{
@@ -127,14 +118,13 @@ nav li{
   height:5vw;
   width:5vw;
   padding-bottom: 2vw;
-  position: absolute;
-  top: 2vw;
-  left: 2vw;
+  position: relative;
   color:#FFFFFF;
-  z-index: 10002;
+  z-index: -10002;
+  margin: 0;
 }
 .sousmenu{
-  z-index: 10000000;
+  z-index: -10000000000;
   margin: 0;
   color:#FFFFFF;
   padding-top: 5vw;
@@ -152,7 +142,7 @@ nav li{
 }
 
 #sousmenu1{
-  z-index: 10000;
+  z-index: -10000000000;
   width: 100vw;
   position: absolute;
   left: 0;
@@ -161,7 +151,20 @@ nav li{
   background-color: #000000;
 }
 
+#btnmenu{
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+.btnmenuafter{
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+}
+
 .sousmenu a{
+  z-index: 1;
   display:block;
   text-align: center;
   width:100%;
@@ -185,11 +188,17 @@ nav li{
   text-decoration: underline;
 }
 
+.downArrow{
+  max-width: 3vw;
+}
+
 #main{
   padding-top: 15vw;
   z-index: 9999;
   max-width: 100vw;
   position: relative;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .posmain{
@@ -200,6 +209,8 @@ nav li{
 .nonb{
   background: none;
   border-radius: 0;
+  color: #FFFFFF;
+  border: none;
 }
 
 .nonb :hover{
@@ -213,106 +224,12 @@ nav li{
 }
 
 
-.profils{
-  margin-top: 5vw;
-}
 
-.profils #btnj .nonb{
-  border-radius: 0;
-  background: none;
-}
-
-.profils #btnv .nonb{
-  border-radius: 0;
-  background: none;
-}
-
-.profils #btna .nonb{
-  border-radius: 0;
-  background: none;
-}
-
-.profils #btne .nonb{
-  border-radius: 0;
-  background: none;
-}
-
-.profils img{
-  border-radius: 720px;
-  max-width: 7vw;
-  position: absolute;
-  border-top: solid 2px #D3D0CB;
-  border-left: solid 2px #D3D0CB;
-}
-
-.profils .titre{
-  position: absolute;
-  z-index: 1;
-}
-
-.btnprof{
-  background-color: #393E41;
-  width: 20vw;
-  height: 30vw;
-  border-radius: 20px;
-  position: absolute;
-  border: solid 2px #D3D0CB;
-}
-
-.btnprof img{
-  left: -3vw;
-  top: -3vw;z-index: 1;
-}
-
-.btnprof .titre{
-  font-size: 3vw;
-  top: -2vw;
-  left: 6vw;
+#main{
+  margin-top: 5vh;
 }
 
 
-.btnprof p{
-  margin-left: 1vw;
-  margin-right: 1vw;
-  text-align: center;
-  margin-top: 3.6vw;
-  font-size: 0.98vw;
-}
-
-
-.btnprof p a{
-  text-decoration: underline;
-  margin: 0;
-  padding: 0;
-}
-
-.btnprof a img:hover{
-  border-radius: 360px;
-}
-
-.btnprof > p > a:hover{
-  color: #D3D0CB;
-}
-
-#btnv .titre{
-  left: 5vw;
-}
-
-#btnj{
-  left: 4vw;
-}
-
-#btnv{
-  left: 28vw;
-}
-
-#btna{
-  left: 52vw;
-}
-
-#btne{
-  left: 76vw;
-}
 
 .vp{
   z-index: 1;
@@ -326,7 +243,6 @@ nav li{
 }
 
 .services{
-  margin-top: 40vw;
   max-width: 100vw;
 }
 
@@ -334,7 +250,6 @@ nav li{
   font-size: 1.3vw;
   position: absolute;
   display: inline-block;
-  margin-top: 3vw;
 }
 
 .services ul li a{
@@ -348,16 +263,42 @@ nav li{
 
 .sl1{
   left: 14vw;
+  margin-top: 3vw;
 }
 
 .sl2{
   right: 14vw;
+  margin-top: 3vw;
+}
+
+.ele{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.prof .name{
+  max-width: 40vw;
+}
+
+.prof > img{
+  max-width: 20vw;
+}
+
+.prof > p {
+  width: 50vw;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.profils > p{
+  margin-left: 10vw;
+  margin-right: 10vw
 }
 
 .sl{
-  position: absolute;
-  margin-top: 20vw;
-  left: 45vw;
+  position: relative;
+  margin-top: 30vh;
+  left: 0;
   margin-bottom: 5vw;
 }
 
@@ -374,6 +315,13 @@ nav li{
   position: absolute;
   top: 1vw;
   right: 2vw;
+}
+
+#logoL{
+  max-width: 10vw;
+  position: absolute;
+  top: 1vw;
+  left: 2vw;
 }
 
 #pageprof p a{
@@ -477,267 +425,74 @@ color: #D3D0CB;
   border: solid 2px #D3D0CB;
 }
 
+.info{
+  vertical-align: middle;
+  margin-top: -3vh;
+}
+
+.info2{
+  vertical-align: middle;
+  margin-top: -3vh;
+}
+
 .errorimg{
   max-width: 68vw;
 }
 
-@media (min-width: 960px) {
-  #menu {
-    display: none;
-  }
-  #bigscreen{
-    display: block;
-  }
-  #logotel{
-    display: none;
-  }
-  .desc{
-    display: block;
-  }
-  #logo{
-    display: block;
-  }
-  .mobprofils{
-    display: none;
-  }
-  .profils{
-    display: block;
-  }
+.telmail{
+  padding-left: 0.3vw;
+  padding-right: 0.3vw;
+  border-top: solid 1px #00ffff;
+  border-bottom: solid 1px #ff0000;
 }
 
-@media (min-device-width: 960px){
-  .mobprofils{
-    display: none;
-  }
-  .profils{
-    display: block;
-  }
+.profils > .btnprof{
+  margin-top: 3vh;
 }
 
-@media screen and (max-width: 960px) {
-  #menu {
-    display: block;
-  }
-  .desc{
-    display: block;
-  }
-  #bigscreen{
-    display: none;
-  }
-  header > nav{
-    display: none;
-  }
-  #logo{
-    max-width: 8vw;
-    display: block;
-  }
-  #logotel{
-    display: none;
-  }
-  .mobprofils{
-    display: none;
-  }
-  .profils{
-    display: block;
-  }
+.name2{
+  max-width: 20vw;
+  margin-top: -10vh;
 }
 
+.profilsacc{
+  text-align: center;
+}
+
+.profacc{
+  display: inline-block;
+}
 
 @media (max-device-width: 960px) {
-  .mobprofils{
+  .profacc{
     display: block;
   }
-  .profils{
-    display: none;
+  .name2{
+    max-width: 50vw;
+    margin-top: -10vh;
   }
-  .mobbtnprof{
-    position: absolute;
-    width: 0vw;
-    height: 0vw;
-    display: inline-block;
-    top: 0vh;
+  .profimg{
+    min-width: 50vw;
   }
-  .mobbtnprofj{
-    position: absolute;
-    margin-left: 0vw;
+  .info{
+    vertical-align: middle;
+    margin-top: -2vh;
   }
-  .mobprofils{
-    position: absolute;
-    left: 2vw;
+  .info2{
+    vertical-align: middle;
+    margin-top: -3vh;
   }
-  .mobbtnprof img{
-    width: 23vw;
-    height: 23vw;
-    border: solid 2px #D3D0CB;
-    border-radius: 25px;
-    position: absolute;
-    left: -3.5vw;
-  }
-  .mobtitre{
-    position: absolute;
-    top: 11vh;
-    font-size: 4.5vw;
-  }
-  .mobbtnprof ul{
-    position: absolute;
-    left: -6vw;
-    top: 19vh;
+  .services ul li p{
     font-size: 3vw;
   }
-  .mobbtnprof p{
-    position: absolute;
-    font-size: 3.5vw;
-    top: 14vh;
-    text-align: center;
-  }
-  .mobbtnprof  .troispts{
-    position: absolute;
-    top: 30vh;
-    left: 5vw;
-  }
-  .mobtitrev{
-    left: -2vw;
-  }
-  .mobvp{
-    position: absolute;
-    width: 4.5vw;
-    height: 5vw;
-    border-radius: 1000px;
-    top: 70vw;
-    left: 4vw;
-    background-color: var(--titre-color);
-  }
-  .mobvp img{
-    max-width: 4vw;
-    max-height: 4vw;
-    left: 1vw;
-    top: 1vw;
-    border: none;
-  }
-
-  .mobvp img:hover{
-    max-width: 4.5vw;
-    max-height: 4.5vw;
-  }
-
-  #logo{
-    display: none;
-  }
-  #logotel{
-    display: block;
-    max-width: 9vw;
-    position: absolute;
-    left: 44.5vw;
-    top: 8.5vw;
-  }
-  .desc{
-    display: none;
-  }
-  header{
-    padding-bottom: 9vw;
-  }
-  #menu1 a{
-    position: absolute;
-    top: 3vw;
-  }
-  .error p{
+  .services ul li {
     font-size: 3vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  .error h1{
-    font-size: 3vw;
-  }
-  .errorimg{
-    max-width: 80vw;
-  }
-  .error1 > img{
-    max-width: 20vw;
-  }
-  .error p{
-    text-align: justify;
-    text-align-last: center;
-  }
-  header > nav{
-    display: none;
-  }
-  #pageprof a{
-    font-size: 1.5vw;
-  }
-  #pageprof .profilimg{
-    position: relative;
-    left: 40vw;
-    min-width: 20vw;
-    border: solid 3px #D3D0CB;
-  }
-  #pageprof #jonah .profilimg{
-    top: -1vw;
-  }
-  #pageprof #valentin .profilimg{
-    top: 1vw;
-  }
-  #pageprof #adrien .profilimg{
-    top: 4vw;
-  }
-  #pageprof #ethan .profilimg{
-    top: 8vw;
-  }
-  #pageprof #ethan p{
-    padding-bottom: 3vw;
-  }
-  #pageprof p{
-    text-align: justify;
-    text-align-last: center;
-  }
-  .sl1{
-    left: 3vw;
-  }
-  .sl1 p{
-    font-size: 3vw;
-    text-align: left;
-    margin: 0;
   }
   .sl2{
-    left: 58vw;
-    padding-right: 3vw;
-    margin-right: 0;
-  }
-  .sl2 p{
-    font-size: 3vw;
-    text-align: left;
-    margin: 0;
-    width: 31vw;
+    margin-top: 25vh;
+    margin-right: 6.5vw;
   }
   .sl{
-    margin-top: 25vw;
-    text-align: center;
-    left: 35vw;
-  }
-  a{
-    font-size: 3vw;
-  }
-  #menu{
-    display: block;
-  }
-  header h1{
-    font-size: 8vw;
-  }
-  header h3{
-    font-size: 2.5vw;
-  }
-  .title{
-    font-size: 1.3vw;
-  }
-  #pageprof p{
-    font-size: 2vw;
-  }
-  .services{
-    margin-top: 43vh;
-  }
-  p{
-    font-size: 2vw;
-  }
-  #bigscreen{
-    display: none;
+    margin-top: 45vh;
   }
 }
