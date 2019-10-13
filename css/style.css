@@ -56,10 +56,12 @@ a:hover{
 
 h1{
   font-size: 5vw;
+  line-height: 1.7vw
 }
 
 h3{
   font-size: 1.5vw;
+  line-height: 1.8vw;
 }
 
 #bigscreen{
@@ -68,7 +70,7 @@ h3{
 }
 
 p{
-  text-align: justify;
+  text-align: left;
   font-size: 1.2vw;
 }
 
@@ -286,7 +288,7 @@ header h3{
 
 .prof > p {
   width: 50vw;
-  text-align: justify;
+  text-align: left;
   text-align-last: center;
 }
 
@@ -514,6 +516,7 @@ hr{
   p{
     font-size: 1.7vw;
     line-height: 1.7vh;
+    text-align: left;
   }
   .name{
     min-width: 60vw;
