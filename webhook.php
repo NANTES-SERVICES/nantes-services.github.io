@@ -1,7 +1,4 @@
 <?php
-$content = file_get_contents('php://input');
-file_put_contents('message.txt', $content);
-
 define('TOKEN', '614721772:AAE0L1O4GgNcurXkddlvd4cQIzgwGP30YqI');
 
 // récupération des données envoyées par Telegram
